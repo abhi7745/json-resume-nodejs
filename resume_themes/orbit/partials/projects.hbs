@@ -1,0 +1,42 @@
+{{#if resume.projects}}
+    <section class="section projects-section">
+        <h2 class="section-title"><i class="fa fa-archive"></i>Projects</h2>
+        <!--                    <div class="intro">
+                                <p>You can list your side projects or open source libraries in this section. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et ligula in nunc bibendum fringilla a eu lectus.</p>
+                            </div>--><!--//intro-->
+        {{#resume.projects}}
+            <div class="item">
+                    <span class="project-title"><a href="{{url}}" target="_blank">{{name}}</a></span> -
+                    <span class="project-tagline">{{#markdown}}{{description}}{{/markdown}}</span>
+                <div class="d-flex justify-content-between">
+                    
+                    {{#if url}}
+                    <span class="website">
+                        <span class="fas fa-external-link-alt"></span>
+                        <a target="_blank" href="{{url}}">{{url}}</a>
+                    </span>
+                    {{/if}}
+                    {{#if startDate}}
+                    <div class="date">
+                        <span class="startDate">{{MY startDate}}</span>
+                        {{#if endDate}}
+                        <span class="endDate">- {{MY endDate}}</span>
+                        {{else}}
+                        <span class="endDate">- Current</span>
+                        {{/if}}
+                    </div>
+                </div>
+
+                {{/if}}
+                <div class="d-flex justify-content-between">
+                    {{#if roles}}
+                    <div class="summary">Role: {{roles}}</div>
+                    {{/if}}
+                    {{#if type}}
+                    <small>{{type}}</small>
+                    {{/if}}
+                </div>
+            </div><!--//item-->
+        {{/resume.projects}}
+    </section><!--//section-->
+{{/if}}

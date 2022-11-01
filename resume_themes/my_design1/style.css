@@ -1,0 +1,903 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6, hr, p, figure {
+    display: block;
+    font-size: 1em;
+    font-weight: normal;
+    margin: 0;
+    border-width: 0;
+    opacity: 1;
+}
+
+ul {
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    display: block;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    display: block;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+@media (max-width: 99999px) {
+    .max\:show {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .xxxl\:show {
+        display: none;
+    }
+
+    .xxl\:show {
+        display: none;
+    }
+
+    .xl\:show {
+        display: none;
+    }
+
+    .lg\:show {
+        display: none;
+    }
+
+    .md\:show {
+        display: none;
+    }
+
+    .sm\:show {
+        display: none;
+    }
+
+    .xs\:show {
+        display: none;
+    }
+
+    .max\:hide {
+        display: none;
+    }
+}
+
+@media (max-width: 2999px) {
+    .xxxl\:show {
+        display: flex;
+    }
+
+    .xxxl\:hide {
+        display: none;
+    }
+}
+
+@media (max-width: 1919px) {
+    .xxl\:show {
+        display: flex;
+    }
+
+    .xxl\:hide {
+        display: none;
+    }
+}
+
+@media (max-width: 1399px) {
+    .xl\:show {
+        display: flex;
+    }
+
+    .xl\:hide {
+        display: none;
+    }
+}
+
+@media (max-width: 1199px) {
+    .lg\:show {
+        display: flex;
+    }
+
+    .lg\:hide {
+        display: none;
+    }
+}
+
+@media (max-width: 991px) {
+    .md\:show {
+        display: flex;
+    }
+
+    .md\:hide {
+        display: none;
+    }
+}
+
+@media (max-width: 767px) {
+    .sm\:show {
+        display: flex;
+    }
+
+    .sm\:hide {
+        display: none;
+    }
+}
+
+@media (max-width: 575px) {
+    .xs\:show {
+        display: flex;
+    }
+
+    .xs\:hide {
+        display: none;
+    }
+}
+
+.headroom {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10000;
+
+    will-change: transform;
+    transition: transform 200ms linear;
+}
+
+.headroom--pinned {
+    transform: translateY(0%);
+}
+
+.headroom--unpinned {
+    transform: translateY(-100%);
+}
+
+/* fonts.css */
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Hind:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@font-face {
+  font-family: "FontAwesome";
+  font-weight: normal;
+  font-style: normal;
+  src: url("https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/fonts/fontawesome-webfont.eot?v=4.3.0");
+  src: url("https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/fonts/fontawesome-webfont.eot?#iefix&v=4.3.0")
+      format("embedded-opentype"),
+    url("https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/fonts/fontawesome-webfont.woff2?v=4.3.0")
+      format("woff2"),
+    url("https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/fonts/fontawesome-webfont.woff?v=4.3.0")
+      format("woff"),
+    url("https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/fonts/fontawesome-webfont.ttf?v=4.3.0")
+      format("truetype"),
+    url("https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/fonts/fontawesome-webfont.svg?v=4.3.0#fontawesomeregular")
+      format("svg");
+}
+
+
+/* This source code is exported from pxCode, you can get more document from https://www.pxcode.io */
+.resume1-block {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+}
+.resume1-block.layout {
+  position: relative;
+  overflow: hidden;
+}
+.resume1-flex {
+  display: flex;
+  flex-direction: column;
+}
+.resume1-flex.layout4 {
+  position: relative;
+  flex-grow: 1;
+  margin: 36px 40px 75px;
+}
+.resume1-flex1 {
+  display: flex;
+}
+.resume1-flex1.layout {
+  position: relative;
+}
+.resume1-text-body {
+  font: 700 13px/1.15 "IBM Plex Sans", Helvetica, Arial, serif;
+  color: #212121;
+  letter-spacing: 0.200000003px;
+}
+.resume1-text-body.layout {
+  position: relative;
+  flex: 0 0 auto;
+  margin: 1px 0px 29px;
+}
+.resume1-flex-spacer {
+  flex: 0 1 75px;
+}
+.resume1-flex-item {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  flex: 0 1 376px;
+}
+.resume1-flex.layout {
+  position: relative;
+  flex-grow: 1;
+}
+.resume1-medium-title {
+  font: 700 24px/1.04 "IBM Plex Sans", Helvetica, Arial, serif;
+  color: #212121;
+  letter-spacing: -0.6px;
+}
+.resume1-medium-title.layout {
+  position: relative;
+}
+.resume1-small-text-body {
+  font: 10px/1 "Hind", Helvetica, Arial, serif;
+  color: #212121;
+  letter-spacing: 0.6000000119px;
+  opacity: 0.6;
+}
+.resume1-small-text-body.layout {
+  position: relative;
+  margin: 10px 0px 0px 1px;
+}
+.resume1-flex2 {
+  display: flex;
+}
+.resume1-flex2.layout {
+  position: relative;
+  margin: 25px 0px 0px;
+}
+.resume1-text-body.layout1 {
+  position: relative;
+  flex: 0 0 auto;
+  margin: 1px 0px 45px;
+}
+.resume1-flex-spacer1 {
+  flex: 0 1 90px;
+}
+.resume1-flex-item1 {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  flex: 0 1 365px;
+}
+.resume1-group {
+  display: flex;
+  flex-direction: column;
+}
+.resume1-group.layout {
+  position: relative;
+}
+.resume1-small-text-body1 {
+  font: 11px/1.72 "Hind", Helvetica, Arial, serif;
+  color: #212121;
+  letter-spacing: -0.600000003px;
+  opacity: 0.6;
+}
+.resume1-small-text-body1.layout {
+  position: relative;
+  flex-grow: 1;
+}
+.resume1-box {
+  background-color: #212121;
+}
+.resume1-box.layout {
+  position: absolute;
+  top: 7px;
+  height: 3px;
+  left: -10px;
+  width: 3px;
+}
+.resume1-group.layout1 {
+  position: relative;
+  margin: 2px 0px 0px;
+}
+.resume1-small-text-body11 {
+  font: 11px/1.72 "Hind", Helvetica, Arial, serif;
+  color: #212121;
+  letter-spacing: -0.200000003px;
+  opacity: 0.6;
+}
+.resume1-small-text-body11.layout {
+  position: relative;
+  flex-grow: 1;
+}
+.resume1-group.layout2 {
+  position: relative;
+  margin: 2px 0px 0px;
+}
+.resume1-small-text-body12 {
+  font: 11px/1.72 "Hind", Helvetica, Arial, serif;
+  color: #212121;
+  letter-spacing: -0.800000003px;
+  opacity: 0.6;
+}
+.resume1-small-text-body12.layout {
+  position: relative;
+  flex-grow: 1;
+}
+.resume1-flex3 {
+  display: flex;
+}
+.resume1-flex3.layout {
+  position: relative;
+  margin: 25px 0px 0px;
+}
+.resume1-text-body.layout2 {
+  position: relative;
+  flex: 0 0 auto;
+  margin: 1px 0px 60px;
+}
+.resume1-flex-spacer2 {
+  flex: 0 1 94px;
+}
+.resume1-flex-item2 {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  flex: 1 1 375px;
+}
+.resume1-small-text-body13 {
+  font: 11px/1.72 "Hind", Helvetica, Arial, serif;
+  color: #212121;
+  letter-spacing: -0.200000003px;
+  opacity: 0.6;
+}
+.resume1-small-text-body13.layout {
+  position: relative;
+  flex-grow: 1;
+  width: 375px;
+  min-width: 375px;
+}
+.resume1-flex4 {
+  display: flex;
+}
+.resume1-flex4.layout {
+  position: relative;
+  margin: 25px 0px 0px;
+}
+.resume1-flex-spacer3 {
+  flex: 0 1 73px;
+}
+.resume1-flex-item3 {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  flex: 0 1 375px;
+}
+.resume1-flex5 {
+  display: flex;
+  justify-content: space-between;
+}
+.resume1-flex5.layout {
+  position: relative;
+}
+.resume1-small-text-body2 {
+  font: 500 11px/1.63 "IBM Plex Sans", Helvetica, Arial, serif;
+  color: #212121;
+  letter-spacing: 0px;
+}
+.resume1-small-text-body2.layout {
+  position: relative;
+  flex: 0 0 auto;
+  margin: 0px 0px 1px;
+}
+.resume1-small-text-body3 {
+  display: flex;
+  justify-content: flex-end;
+  font: 10px/1.8 "Hind", Helvetica, Arial, serif;
+  color: #212121;
+  text-align: right;
+  letter-spacing: 0px;
+  opacity: 0.5;
+}
+.resume1-small-text-body3.layout {
+  position: relative;
+  flex: 0 0 auto;
+  margin: 1px 0px 0px;
+}
+.resume1-small-text-body14 {
+  font: 11px/1.72 "Hind", Helvetica, Arial, serif;
+  color: #212121;
+  letter-spacing: -0.200000003px;
+  opacity: 0.6;
+}
+.resume1-small-text-body14.layout {
+  position: relative;
+  margin: 7px 0px 0px;
+}
+.resume1-flex6 {
+  display: flex;
+}
+.resume1-flex6.layout {
+  position: relative;
+  margin: 25px 0px 0px;
+}
+.resume1-text-body.layout3 {
+  position: relative;
+  flex: 0 0 auto;
+  margin: 1px 0px 165px;
+}
+.resume1-flex-spacer4 {
+  flex: 0 1 55.8px;
+}
+.resume1-flex-item4 {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  flex: 0 1 376.2px;
+}
+.resume1-flex.layout1 {
+  position: relative;
+  margin: 0px 1.2px 0px 0px;
+}
+.resume1-flex7 {
+  display: flex;
+  justify-content: space-between;
+}
+.resume1-flex7.layout {
+  position: relative;
+}
+.resume1-small-text-body4 {
+  display: flex;
+  justify-content: flex-end;
+  font: 10px/1.8 "Hind", Helvetica, Arial, serif;
+  color: #212121;
+  text-align: right;
+  letter-spacing: 0px;
+  opacity: 0.5;
+}
+.resume1-small-text-body4.layout {
+  position: relative;
+  flex: 0 0 auto;
+  margin: 1px 0px 0px;
+}
+.resume1-small-text-body15 {
+  font: 11px/1.72 "Hind", Helvetica, Arial, serif;
+  color: #212121;
+  letter-spacing: -0.200000003px;
+  opacity: 0.6;
+}
+.resume1-small-text-body15.layout {
+  position: relative;
+  margin: 7px 0px 0px;
+}
+.resume1-flex.layout2 {
+  position: relative;
+  margin: 15px 0px 0px 1.2px;
+}
+.resume1-flex8 {
+  display: flex;
+  justify-content: space-between;
+}
+.resume1-flex8.layout {
+  position: relative;
+}
+.resume1-flex-spacer5 {
+  flex: 0 1 96px;
+}
+.resume1-small-text-body5 {
+  display: flex;
+  justify-content: flex-end;
+  font: 10px/1.8 "Hind", Helvetica, Arial, serif;
+  color: #212121;
+  text-align: right;
+  letter-spacing: 0px;
+  opacity: 0.5;
+}
+.resume1-small-text-body5.layout {
+  position: relative;
+  flex: 0 0 auto;
+  margin: 1px 0px 0px;
+}
+.resume1-small-text-body16 {
+  font: 11px/1.72 "Hind", Helvetica, Arial, serif;
+  color: #212121;
+  letter-spacing: -0.200000003px;
+  opacity: 0.6;
+}
+.resume1-small-text-body16.layout {
+  position: relative;
+  margin: 7px 0px 0px;
+}
+.resume1-flex9 {
+  display: flex;
+}
+.resume1-flex9.layout {
+  position: relative;
+  margin: 22px 0px 0px;
+}
+.resume1-text-body.layout4 {
+  position: relative;
+  flex: 0 0 auto;
+  margin: 1px 0px 72px;
+}
+.resume1-flex-spacer6 {
+  flex: 0 1 84px;
+}
+.resume1-flex-item5 {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  flex: 0 1 268px;
+}
+.resume1-flex10 {
+  display: flex;
+}
+.resume1-flex10.layout {
+  position: relative;
+  flex-grow: 1;
+}
+.resume1-flex-item6 {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  flex: 0 1 88px;
+}
+.resume1-group.layout3 {
+  position: relative;
+  margin: 0px 13px 0px 0px;
+}
+.resume1-small-text-body17 {
+  font: 11px/1.72 "Hind", Helvetica, Arial, serif;
+  color: #212121;
+  letter-spacing: -0.200000003px;
+}
+.resume1-small-text-body17.layout {
+  position: relative;
+  flex-grow: 1;
+}
+.resume1-box.layout1 {
+  position: absolute;
+  top: 9px;
+  height: 3px;
+  left: -10px;
+  width: 3px;
+}
+.resume1-group.layout4 {
+  position: relative;
+  margin: 4px 0px 0px;
+}
+.resume1-small-text-body18 {
+  font: 11px/1.72 "Hind", Helvetica, Arial, serif;
+  color: #212121;
+  letter-spacing: -0.200000003px;
+}
+.resume1-small-text-body18.layout {
+  position: relative;
+  flex-grow: 1;
+}
+.resume1-box.layout2 {
+  position: absolute;
+  top: 9px;
+  height: 3px;
+  left: -10px;
+  width: 3px;
+}
+.resume1-group.layout5 {
+  position: relative;
+  margin: 4px 37px 0px 0px;
+}
+.resume1-small-text-body19 {
+  font: 11px/1.72 "Hind", Helvetica, Arial, serif;
+  color: #212121;
+  letter-spacing: -0.200000003px;
+}
+.resume1-small-text-body19.layout {
+  position: relative;
+  flex-grow: 1;
+}
+.resume1-box.layout3 {
+  position: absolute;
+  top: 9px;
+  height: 3px;
+  left: -10px;
+  width: 3px;
+}
+.resume1-group.layout6 {
+  position: relative;
+  margin: 4px 0px 0px;
+}
+.resume1-small-text-body110 {
+  font: 11px/1.72 "Hind", Helvetica, Arial, serif;
+  color: #212121;
+  letter-spacing: -0.200000003px;
+}
+.resume1-small-text-body110.layout {
+  position: relative;
+  flex-grow: 1;
+}
+.resume1-box.layout4 {
+  position: absolute;
+  top: 9px;
+  height: 3px;
+  left: -10px;
+  width: 3px;
+}
+.resume1-flex-spacer7 {
+  flex: 0 1 88px;
+}
+.resume1-flex-item7 {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  flex: 0 1 92px;
+}
+.resume1-flex.layout3 {
+  position: relative;
+  flex-grow: 1;
+  margin: 0px 0px 23px;
+}
+.resume1-small-text-body111 {
+  font: 11px/1.72 "Hind", Helvetica, Arial, serif;
+  color: #212121;
+  letter-spacing: -0.200000003px;
+}
+.resume1-small-text-body111.layout {
+  position: relative;
+  flex-grow: 1;
+}
+.resume1-box.layout5 {
+  position: absolute;
+  top: 9px;
+  height: 3px;
+  left: -10px;
+  width: 3px;
+}
+.resume1-group.layout7 {
+  position: relative;
+  margin: 4px 23px 0px 0px;
+}
+.resume1-small-text-body112 {
+  font: 11px/1.72 "Hind", Helvetica, Arial, serif;
+  color: #212121;
+  letter-spacing: -0.200000003px;
+}
+.resume1-small-text-body112.layout {
+  position: relative;
+  flex-grow: 1;
+}
+.resume1-box.layout6 {
+  position: absolute;
+  top: 9px;
+  height: 3px;
+  left: -10px;
+  width: 3px;
+}
+.resume1-group.layout8 {
+  position: relative;
+  margin: 4px 5px 0px 0px;
+}
+.resume1-small-text-body113 {
+  font: 11px/1.72 "Hind", Helvetica, Arial, serif;
+  color: #212121;
+  letter-spacing: -0.200000003px;
+}
+.resume1-small-text-body113.layout {
+  position: relative;
+  flex-grow: 1;
+}
+.resume1-box.layout7 {
+  position: absolute;
+  top: 9px;
+  height: 3px;
+  left: -10px;
+  width: 3px;
+}
+.resume1-flex11 {
+  display: flex;
+}
+.resume1-flex11.layout {
+  position: relative;
+  margin: 25px 0px 0px;
+}
+.resume1-text-body.layout5 {
+  position: relative;
+  flex: 0 0 auto;
+  margin: 1px 0px 72px;
+}
+.resume1-flex-spacer8 {
+  flex: 0 1 50px;
+}
+.resume1-flex-item8 {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  flex: 0 1 291px;
+}
+.resume1-flex12 {
+  display: flex;
+}
+.resume1-flex12.layout {
+  position: relative;
+  flex-grow: 1;
+}
+.resume1-flex-item9 {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  flex: 0 1 86px;
+}
+.resume1-small-text-body114 {
+  font: 11px/1.72 "Hind", Helvetica, Arial, serif;
+  color: #212121;
+  letter-spacing: -0.200000003px;
+}
+.resume1-small-text-body114.layout {
+  position: relative;
+  flex-grow: 1;
+}
+.resume1-box.layout8 {
+  position: absolute;
+  top: 9px;
+  height: 3px;
+  left: -10px;
+  width: 3px;
+}
+.resume1-group.layout9 {
+  position: relative;
+  margin: 4px 0px 0px;
+}
+.resume1-small-text-body115 {
+  font: 11px/1.72 "Hind", Helvetica, Arial, serif;
+  color: #212121;
+  letter-spacing: -0.200000003px;
+}
+.resume1-small-text-body115.layout {
+  position: relative;
+  flex-grow: 1;
+}
+.resume1-box.layout9 {
+  position: absolute;
+  top: 9px;
+  height: 3px;
+  left: -10px;
+  width: 3px;
+}
+.resume1-group.layout10 {
+  position: relative;
+  margin: 4px 0px 0px;
+}
+.resume1-small-text-body116 {
+  font: 11px/1.72 "Hind", Helvetica, Arial, serif;
+  color: #212121;
+  letter-spacing: -0.200000003px;
+}
+.resume1-small-text-body116.layout {
+  position: relative;
+  flex-grow: 1;
+}
+.resume1-box.layout10 {
+  position: absolute;
+  top: 9px;
+  height: 3px;
+  left: -10px;
+  width: 3px;
+}
+.resume1-group.layout11 {
+  position: relative;
+  margin: 4px 7px 0px 0px;
+}
+.resume1-small-text-body117 {
+  font: 11px/1.72 "Hind", Helvetica, Arial, serif;
+  color: #212121;
+  letter-spacing: -0.200000003px;
+}
+.resume1-small-text-body117.layout {
+  position: relative;
+  flex-grow: 1;
+}
+.resume1-box.layout11 {
+  position: absolute;
+  top: 9px;
+  height: 3px;
+  left: -10px;
+  width: 3px;
+}
+.resume1-flex-spacer9 {
+  flex: 0 1 90px;
+}
+.resume1-flex-item10 {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  flex: 0 1 115px;
+}
+.resume1-small-text-body118 {
+  font: 11px/1.72 "Hind", Helvetica, Arial, serif;
+  color: #212121;
+  letter-spacing: -0.200000003px;
+}
+.resume1-small-text-body118.layout {
+  position: relative;
+  flex-grow: 1;
+}
+.resume1-box.layout12 {
+  position: absolute;
+  top: 9px;
+  height: 3px;
+  left: -10px;
+  width: 3px;
+}
+.resume1-group.layout12 {
+  position: relative;
+  margin: 4px 0px 0px;
+}
+.resume1-small-text-body119 {
+  font: 11px/1.72 "Hind", Helvetica, Arial, serif;
+  color: #212121;
+  letter-spacing: -0.200000003px;
+}
+.resume1-small-text-body119.layout {
+  position: relative;
+  flex-grow: 1;
+}
+.resume1-box.layout13 {
+  position: absolute;
+  top: 9px;
+  height: 3px;
+  left: -10px;
+  width: 3px;
+}
+.resume1-group.layout13 {
+  position: relative;
+  margin: 4px 0px 0px;
+}
+.resume1-small-text-body120 {
+  font: 11px/1.72 "Hind", Helvetica, Arial, serif;
+  color: #212121;
+  letter-spacing: -0.200000003px;
+}
+.resume1-small-text-body120.layout {
+  position: relative;
+  flex-grow: 1;
+}
+.resume1-box.layout14 {
+  position: absolute;
+  top: 9px;
+  height: 3px;
+  left: -10px;
+  width: 3px;
+}
+.resume1-group.layout14 {
+  position: relative;
+  margin: 4px 0px 0px;
+}
+.resume1-small-text-body121 {
+  font: 11px/1.72 "Hind", Helvetica, Arial, serif;
+  color: #212121;
+  letter-spacing: -0.200000003px;
+}
+.resume1-small-text-body121.layout {
+  position: relative;
+  flex-grow: 1;
+}
+.resume1-box.layout15 {
+  position: absolute;
+  top: 9px;
+  height: 3px;
+  left: -10px;
+  width: 3px;
+}
